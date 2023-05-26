@@ -21,38 +21,38 @@
     />
   </head>
   <body>
-    <header class="top-menu">
-      <div class="container nav-menu">
-        <nav class="main-navbar">
-          <a class="main-logo link" href="./index.html"
+    <header class="header">
+      <div class="header__container container">
+        <nav class="nav">
+          <a class="logo" href="./index.html"
             ><span class="first">Web</span><span class="second">Studio</span></a
           >
-          <ul class="main-menu">
-            <li class="main-menu-item">
-              <a class="menu-link link" href="./index.html">Agencja</a>
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a class="nav__link" href="#">Agencja</a>
             </li>
-            <li class="main-menu-item">
-              <a class="menu-link present link" href="./portfolio.html"
+            <li class="nav__item">
+              <a class="nav__link nav__link--current" href="./portfolio.html"
                 >Portfolio</a
               >
             </li>
-            <li class="main-menu-item">
-              <a class="menu-link link" href="#logo">Kontakt</a>
+            <li class="nav__item">
+              <a class="nav__link" href="#logo">Kontakt</a>
             </li>
           </ul>
         </nav>
-        <ul class="main-navbar-contacts">
-          <li class="navbar-contact-item">
-            <a class="navbar-contacts link" href="maito:info@devstudio.com"
-              ><svg class="envelope" width="16px" height="12px">
+        <ul class="contacts__list">
+          <li class="contacts__item">
+            <a class="contacts__link" href="maito:info@devstudio.com"
+              ><svg class="contact__icon" width="16px" height="12px">
                 <use href="./images/icons.svg#icon-envelope"></use>
               </svg>
               info@devstudio.com</a
             >
           </li>
-          <li class="navbar-contact-item">
-            <a class="navbar-contacts link" href="tel:+380961111111">
-              <svg class="smartphone" width="10px" height="16px">
+          <li class="contacts__item">
+            <a class="contacts__link" href="tel:+380961111111">
+              <svg class="contact__icon" width="10px" height="16px">
                 <use href="./images/icons.svg#icon-smartphone"></use>
               </svg>
               +48 111 111 111</a
@@ -298,14 +298,16 @@
     <footer class="footer-contacts">
       <div class="footer-wrapper container">
         <div class="address-wrapper">
-          <a id="logo" class="footer-logo link" href="./index.html"
+          <a id="logo" class="footer-logo" href="./index.html"
             ><span class="first">Web</span
             ><span class="second-logo">Studio</span></a
           >
           <address class="footer-address-list">
             <ul class="footer-contact">
               <li class="address-line">
-                <a href="" class="link">m. Warszawa, Aleje Jerozolimskie 21</a>
+                <a href="" class="address-link"
+                  >m. Warszawa, Aleje Jerozolimskie 21</a
+                >
               </li>
               <li class="mail-link">
                 <a class="link" href="mailto:info@example.com"
@@ -323,28 +325,28 @@
           <h2 class="sm-header">Dołącz do nas</h2>
           <ul class="footer-sm-list">
             <li class="footer-sm-item">
-              <a class="footer-sm-link link" href=""
+              <a class="footer-sm-link" href=""
                 ><svg class="footer-sm-icon" width="20px" height="20px">
                   <use href="./images/icons.svg#icon-instagram"></use>
                 </svg>
               </a>
             </li>
             <li class="footer-sm-item">
-              <a class="footer-sm-link link" href=""
+              <a class="footer-sm-link" href=""
                 ><svg class="footer-sm-icon" width="20px" height="20px">
                   <use href="./images/icons.svg#icon-twitter"></use>
                 </svg>
               </a>
             </li>
             <li class="footer-sm-item">
-              <a class="footer-sm-link link" href=""
+              <a class="footer-sm-link" href=""
                 ><svg class="footer-sm-icon" width="20px" height="20px">
                   <use href="./images/icons.svg#icon-facebook"></use>
                 </svg>
               </a>
             </li>
             <li class="footer-sm-item">
-              <a class="footer-sm-link link" href=""
+              <a class="footer-sm-link" href=""
                 ><svg class="footer-sm-icon" width="20px" height="20px">
                   <use href="./images/icons.svg#icon-linkedin"></use>
                 </svg>
@@ -356,15 +358,20 @@
           <h2 class="footer-form-newsletter">Zapisz się do newslettera</h2>
           <form class="footer-form">
             <label class="footer-label">
-              <input class="footer-field"
-              name="email"
-              type="email"
-              placeholder="E-mail"
-              required
-              >
-              </label>
-              <button type="submit" class="footer-form-button">Zapisz się <svg class="footer-form-icon" width="24" height="24"><use href="./images/icons2.svg#icon-icon-send"></use></svg></button>
-            
+              <input
+                class="footer-field"
+                name="email"
+                type="email"
+                placeholder="E-mail"
+                required
+              />
+            </label>
+            <button type="submit" class="footer-form-button">
+              Zapisz się
+              <svg class="footer-form-icon" width="24" height="24">
+                <use href="./images/icons2.svg#icon-icon-send"></use>
+              </svg>
+            </button>
           </form>
         </div>
       </div>
