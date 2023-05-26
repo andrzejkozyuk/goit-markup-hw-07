@@ -12,11 +12,14 @@ body {
   font-family: "Roboto", sans-serif;
   color: var(--main-color);
 }
-
-.link {
+a {
   text-decoration: none;
   cursor: pointer;
 }
+/*.link {
+  text-decoration: none;
+  cursor: pointer;
+}*/
 /*.list {
   list-style: none;
   margin: 0px;
@@ -28,7 +31,6 @@ ul {
   margin: 0px;
   padding: 0px;
 }
-
 
 .section {
   padding-top: 94px;
@@ -129,12 +131,12 @@ ul {
   background: var(--hover-color);
 }
 
-.main-menu .link:hover,
-.main-menu .link:focus {
+.main-menu .menu-link:hover,
+.main-menu .menu-link:focus {
   color: var(--hover-color);
 }
 
-.main-navbar-contacts .link:hover {
+.main-navbar-contacts .navbar-contacts:hover {
   color: var(--hover-color);
 }
 
@@ -745,7 +747,7 @@ ul {
   margin-bottom: 9px;
 }
 
-.address-line .link {
+.address-line .address-link {
   font-size: 14px;
   line-height: 24px;
   letter-spacing: 0.03em;
